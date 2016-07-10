@@ -25,9 +25,9 @@
         }
 
         twitterFetcher.fetch(config);
-        // $interval(function () {
-        //     twitterFetcher.fetch(config);
-        // }, 5000);
+        $interval(function () {
+            twitterFetcher.fetch(config);
+        }, 5000);
 
         $interval(function () {
             if (newTweets.length) {

@@ -1,4 +1,4 @@
-h2 {
+/*h2 {
   clear:both;
 }
 
@@ -28,17 +28,11 @@ ul li:hover {
   background-color:#f0f3fb;
 }
 
-.user, .tweet, .timePosted {
-  float:left;
-}
-
 .user {
   width:25%;
 }
 
-.tweet {
-  width:50%;
-}
+
 
 .timePosted {
   width:15%;
@@ -80,4 +74,97 @@ ul li:hover {
 .media img {
   max-width:250px;
   max-height:250px;
+}*/
+
+body {
+  overflow:hidden;
+}
+
+div.tweet {
+  border:solid 4px #3fc0f6;
+  padding:10px;
+  margin-bottom:10px;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: row;
+  border-radius: 5px;
+  width: 600px;
+  margin-right: 50px;
+  height:200px;
+}
+
+.TweetAuthor-name {
+  display:none;
+}
+
+.TweetAuthor-screenName {
+  font-size:20px;
+  text-decoration: none;
+  color: orangered;
+  text-shadow: white 1px 1px;
+}
+
+a.TweetAuthor-link {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+
+
+.tweet-and-image {
+  display: flex;
+  flex-direction: column;
+  width:80%;
+}
+
+.image {
+  padding-left:20px;
+}
+
+.content {
+  padding-left:20px;
+  font-size:30px;;
+}
+
+.author {
+  width:20%;
+}
+
+.content a {
+  font-size:30px;
+  text-decoration: none;
+  
+}
+
+.Emoji {
+  width:20px;
+}
+
+img.tweetimage {
+  width:300px;
+}
+
+div.incoming {
+  width:50000%;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;    
+  height:50%;  
+}
+
+div.readyToGo {
+  height:50%;
+  width:700px;  
+}
+
+.low-index {
+  z-index : 1;
+}
+
+div.lanes {
+  display: flex;
+  flex-direction: row;
+  height:500px;
 }

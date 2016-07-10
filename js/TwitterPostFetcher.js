@@ -106,15 +106,42 @@ var configWidget = {
   "showUser": true,
   "showTime": true,
   "showImages": true,
+  "showRetweet" : true,
   "lang": 'en'
 };
 
-twitterFetcher.fetch(configProfile);
-twitterFetcher.fetch(configWidget);
+// var config = {
+//   "id": '472497070914297856',  
+//   "domId": '',
+//   "dataOnly": true,
+//   "enableLinks": true,
+//   "showUser": true,
+//   "showTime": true,
+//   "dateFunction": '',
+//   "showRetweet": false,
+//   "customCallback": handleTweets,
+//   "showInteraction": false
+// }
 
-// Just updating every 5 seconds
-var timer = setInterval(mycode, 5000);
-function mycode() {
-    twitterFetcher.fetch(configProfile);
-    twitterFetcher.fetch(configWidget);
-}
+// //twitterFetcher.fetch(configProfile);
+// twitterFetcher.fetch(config);
+
+// // Just updating every 5 seconds
+// // var timer = setInterval(mycode, 1000);
+// // function mycode() {
+// //     //twitterFetcher.fetch(configProfile);
+// //     twitterFetcher.fetch(configWidget);
+// // }
+// function handleTweets(tweets){
+//   console.log(tweets);
+//     var x = tweets.length;
+//     var n = 0;
+//     var element = document.getElementById('example5');
+//     var html = '<ul>';
+//     while(n < x) {
+//       html += '<li>' + tweets[n] + '</li>';
+//       n++;
+//     }
+//     html += '</ul>';
+//     element.innerHTML = html;
+// }
